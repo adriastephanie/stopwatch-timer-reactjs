@@ -50,12 +50,12 @@ class App extends Component{
 
   render(){
     return(
-      <div className='container'>
+      <div data-testid='form-field' className='container'>
         <img src={cronometro} className='img'/>
         <a className='timer'>{this.state.numero.toFixed(1)}</a>
         <div className='areaBtn'>
-          <a className='btn' onClick={this.start}>{this.state.botao} </a> <br />
-          <a className='btn' onClick={this.stop}>STOP</a>
+          <button data-testid='button-field-start' className='btn' onClick={this.start}>{this.state.botao} </button> <br />
+          <button data-testid='button-field-stop' className='btn' onClick={this.stop}>STOP</button>
         </div>
       </div>
 
